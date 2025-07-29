@@ -1,0 +1,13 @@
+baseURL: https://maaya.kadobayashi.com/
+languageCode: ja-JP
+title: Maaya's Blog
+theme: hyde
+
+params:
+  description: Your custom description
+  themeColor: theme-base-08
+
+menus:
+  main:
+    - name: Github
+      url: https://github.com/maaya-k/
