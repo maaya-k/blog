@@ -1,7 +1,11 @@
+site_url: https://maaya.kadobayashi.com
+search: false
+
 backend:
   name: github
   repo: maaya-k/blog
   branch: main
+  base_url: https://decap.kadobayashi.com
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
