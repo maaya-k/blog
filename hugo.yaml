@@ -6,6 +6,8 @@ theme: hyde
 params:
   description: Your custom description
   themeColor: theme-base-08
+  plausible_url: "https://plausible.karida.info"
+  plausible_domain: "maaya.kadobayashi.com"
 
 menus:
   main:
