@@ -18,4 +18,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Categories", name: "categories", widget: "list", default: [] }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
       - { label: "Body", name: "body", widget: "markdown" }

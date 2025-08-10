@@ -1,5 +1,9 @@
 ---
 title: Ein ganz normaler Tag
+date: 2025-07-05T08:30:00+02:00
+draft: false
+categories: ["Alltag"]
+tags: ["Routine", "Leben", "Tagebuch"]
 ---
 Manchmal sind es die einfachen Tage, die am angenehmsten sind. Kein großes Abenteuer, keine Überraschungen – einfach ein ruhiger, normaler Tag.
 
