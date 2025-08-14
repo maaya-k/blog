@@ -3,6 +3,9 @@ languageCode: ja-JP
 title: Maaya's World
 theme: hyde
 
+permalinks:
+  posts: /:year/:slug/
+
 params:
   description: "München meets Nishinomiya"
   themeColor: theme-base-08
