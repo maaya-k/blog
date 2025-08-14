@@ -2,7 +2,7 @@
 title: Mein neuer Blog ist fertig
 date: 2025-07-10T09:00:00+02:00
 draft: false
-categories: ["Bloggen"]
+categories: ["Reisen・旅行"]
 tags: ["Neustart", "Willkommen"]
 ---
 Hallo und herzlich willkommen auf meinem neuen Blog!

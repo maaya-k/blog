@@ -2,7 +2,7 @@
 title: Warum ich diesen Blog gestartet habe
 date: 2025-07-01T10:00:00+02:00
 draft: false
-categories: ["Persönlich", "Bloggen"]
+categories: ["Schule・学校"]
 tags: ["Start", "Motivation", "Web"]
 ---
 Vielleicht fragst du dich, warum ich überhaupt einen Blog angefangen habe. Die Antwort ist einfach: Ich wollte einen Ort schaffen, an dem ich meine Gedanken und Erfahrungen sammeln und mit anderen teilen kann.

@@ -17,9 +17,20 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: true }
-      - { label: "Categories", name: "categories", widget: "list", default: [] }
-      - { label: "Tags", name: "tags", widget: "list", default: [] }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Titel・タイトル", name: "title", widget: "string" }
+      - { label: "Datum・日付", name: "date", widget: "datetime" }
+      - { label: "Entwurf・下書き", name: "draft", widget: "boolean", default: true }
+      - label: "Kategorien・カテゴリー"
+        name: "categories"
+        widget: "list"
+        default: []
+        field:
+          label: "Kategorie・カテゴリー"
+          name: "category"
+          widget: "select"
+          options:
+            - { label: "Schule・学校", value: "Schule・学校" }
+            - { label: "Reisen・旅行", value: "Reisen・旅行" }
+            - { label: "Sonstiges・その他", value: "Sonstiges・その他" }
+      - { label: "Tags・タグ", name: "tags", widget: "list", default: [] }
+      - { label: "Inhalt・本文", name: "body", widget: "markdown" }
