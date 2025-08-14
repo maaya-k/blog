@@ -13,7 +13,7 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "post"
-    label: "Posts"
+    label: "Blog Posts・ブログ記事"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
