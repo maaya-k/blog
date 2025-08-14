@@ -21,14 +21,5 @@
 {{ template "_internal/disqus.html" . }}
 {{- end }}
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.locale-date').forEach(function(el) {
-      var d = new Date(el.getAttribute('datetime'));
-      if (!isNaN(d)) {
-        el.textContent = d.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
-      }
-    });
-  });
-</script>
+{{ partial "date-locale-script.html" . }}
 {{- end }}

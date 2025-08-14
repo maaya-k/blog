@@ -9,7 +9,7 @@ params:
   plausible_url: "https://plausible.karida.info"
   plausible_domain: "maaya.kadobayashi.com"
 
-menus:
-  main:
-    - name: Github
-      url: https://github.com/maaya-k/
+# menus:
+#   main:
+#     - name: Github
+#       url: https://github.com/maaya-k/
