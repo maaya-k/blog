@@ -5,7 +5,10 @@ draft: false
 categories: ["Schule・学校"]
 tags: ["Start", "Motivation", "Web"]
 ---
+
 Vielleicht fragst du dich, warum ich überhaupt einen Blog angefangen habe. Die Antwort ist einfach: Ich wollte einen Ort schaffen, an dem ich meine Gedanken und Erfahrungen sammeln und mit anderen teilen kann.
+
+<!--more-->
 
 ## Ein paar Gründe:
 

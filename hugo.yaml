@@ -3,6 +3,9 @@ languageCode: ja-JP
 title: Maaya's World
 theme: hyde
 
+# Enable better summary handling for CJK (Japanese) content
+hasCJKLanguage: true
+
 permalinks:
   posts: /:year/:slug/
 
