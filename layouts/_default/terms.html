@@ -1,0 +1,13 @@
+{{ define "main" -}}
+<h1 class="taxonomy-title">{{ .Title }}</h1>
+<ul class="taxonomy-list">
+  {{ range .Data.Terms.Alphabetical }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}" class="taxonomy-link">
+        {{ .Page.Title }}
+      </a>
+      {{ with .Page.Params.ja }}<span class="taxonomy-ja">・{{ . }}</span>{{ end }}
+    </li>
+  {{ end }}
+</ul>
+{{- end }}

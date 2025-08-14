@@ -32,6 +32,7 @@ collections:
           options:
             - { label: "Schule・学校", value: "Schule・学校" }
             - { label: "Reisen・旅行", value: "Reisen・旅行" }
+            - { label: "Essen・食べ物", value: "Essen・食べ物" }
             - { label: "Sonstiges・その他", value: "Sonstiges・その他" }
       - { label: "Tags・タグ", name: "tags", widget: "list", default: [] }
       - { label: "Inhalt・本文", name: "body", widget: "markdown" }

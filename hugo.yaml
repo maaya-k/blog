@@ -1,10 +1,10 @@
 baseURL: https://maaya.kadobayashi.com/
 languageCode: ja-JP
-title: Maaya's Blog
+title: Maaya's World
 theme: hyde
 
 params:
-  description: Your custom description
+  description: "München meets Nishinomiya"
   themeColor: theme-base-08
   plausible_url: "https://plausible.karida.info"
   plausible_domain: "maaya.kadobayashi.com"
