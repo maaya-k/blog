@@ -1,4 +1,5 @@
 site_url: https://maaya.kadobayashi.com
+locale: ja
 search: false
 
 backend:
