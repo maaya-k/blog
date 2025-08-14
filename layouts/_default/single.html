@@ -21,5 +21,16 @@
 {{ template "_internal/disqus.html" . }}
 {{- end }}
 
+
+{{/* Navigation for previous/next articles */}}
+<div class="post-nav">
+  {{ with .PrevInSection }}
+    <a class="nav-badge nav-prev" href="{{ .RelPermalink }}">&laquo; {{ .Title }}</a>
+  {{ end }}
+  {{ with .NextInSection }}
+    <a class="nav-badge nav-next" href="{{ .RelPermalink }}">{{ .Title }} &raquo;</a>
+  {{ end }}
+</div>
+
 {{ partial "date-locale-script.html" . }}
 {{- end }}
