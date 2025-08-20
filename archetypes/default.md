@@ -1,9 +1,11 @@
 ---
-date: '{{ .Date }}'
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-draft: true
+description: '{{ .Description }}'
 categories: []
 tags: []
+date: '{{ .Date }}'
+menu: "main"
+draft: true
 ---
 
 <!--more-->
