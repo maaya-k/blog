@@ -20,26 +20,26 @@ collections:
     slug: "{{slug}}"
     view_filters:
       - label: "Schule・学校"
-        field: "category"
-        pattern: Schule・学校
+        field: "categories"
+        pattern: "Schule・学校"
       - label: "Reisen・旅行"
-        field: "category"
-        pattern: Reisen・旅行
+        field: "categories"
+        pattern: "Reisen・旅行"
       - label: "Essen・食べ物"
-        field: "category"
-        pattern: Essen・食べ物
+        field: "categories"
+        pattern: "Essen・食べ物"
       - label: "Kultur・文化"
-        field: "category"
-        pattern: Kultur・文化
+        field: "categories"
+        pattern: "Kultur・文化"
       - label: "Sonstiges・その他"
-        field: "category"
-        pattern: Sonstiges・その他
+        field: "categories"
+        pattern: "Sonstiges・その他"
     view_groups:
       - label: Monat・月
         field: date
         pattern: \d{4}-(\d{2})
       - label: "Kategorie・カテゴリー"
-        field: "category"
+        field: "categories"
     fields:
       - { label: "Titel・タイトル", name: "title", widget: "string" }
       - { label: "Datum・日付", name: "date", widget: "datetime" }
