@@ -2,8 +2,7 @@
 title: "ドイツにpanko?! "
 date: 2025-08-17T17:53:00.000+09:00
 draft: false
-categories:
-  - Essen・食べ物
+categories: "Essen・食べ物"
 tags:
   - ドイツ
   - パン

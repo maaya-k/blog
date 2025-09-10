@@ -1,4 +1,5 @@
 site_url: https://maaya.kadobayashi.com
+# logo_url: https://maaya.kadobayashi.com/images/logo.png
 locale: ja
 search: false
 
@@ -17,23 +18,40 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
+    view_filters:
+      - label: "Schule・学校"
+        field: "category"
+        pattern: Schule・学校
+      - label: "Reisen・旅行"
+        field: "category"
+        pattern: Reisen・旅行
+      - label: "Essen・食べ物"
+        field: "category"
+        pattern: Essen・食べ物
+      - label: "Kultur・文化"
+        field: "category"
+        pattern: Kultur・文化
+      - label: "Sonstiges・その他"
+        field: "category"
+        pattern: Sonstiges・その他
+    view_groups:
+      - label: Monat・月
+        field: date
+        pattern: \d{4}-(\d{2})
+      - label: "Kategorie・カテゴリー"
+        field: "category"
     fields:
       - { label: "Titel・タイトル", name: "title", widget: "string" }
       - { label: "Datum・日付", name: "date", widget: "datetime" }
       - { label: "Entwurf・下書き", name: "draft", widget: "boolean", default: true }
-      - label: "Kategorien・カテゴリー"
+      - label: "Kategorie・カテゴリー"
         name: "categories"
-        widget: "list"
-        default: []
-        field:
-          label: "Kategorie・カテゴリー"
-          name: "category"
-          widget: "select"
-          options:
-            - { label: "Schule・学校", value: "Schule・学校" }
-            - { label: "Reisen・旅行", value: "Reisen・旅行" }
-            - { label: "Essen・食べ物", value: "Essen・食べ物" }
-            - { label: "Kultur・文化", value: "Kultur・文化" }
-            - { label: "Sonstiges・その他", value: "Sonstiges・その他" }
+        widget: "select"
+        options:
+          - "Schule・学校"
+          - "Reisen・旅行"
+          - "Essen・食べ物"
+          - "Kultur・文化"
+          - "Sonstiges・その他"
       - { label: "Tags・タグ", name: "tags", widget: "list", default: [] }
       - { label: "Inhalt・本文", name: "body", widget: "markdown" }
