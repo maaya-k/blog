@@ -19,8 +19,8 @@ collections:
     create: true
     path: "{{year}}/{{month}}/{{slug}}/index"
     slug: "{{slug}}"
-    media_folder: ""
-    public_folder: ""
+    media_folder: "static/images/uploads"
+    public_folder: "/images/uploads"
     view_filters:
       - label: "Essen・食べ物"
         field: "categories"
