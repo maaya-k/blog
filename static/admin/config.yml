@@ -17,7 +17,6 @@ collections:
     label: "Blog Posts・ブログ記事"
     folder: "content/posts"
     create: true
-    nested: { depth: 2 }
     path: "{{year}}/{{month}}/{{slug}}"
     slug: "{{slug}}"
     view_filters:
