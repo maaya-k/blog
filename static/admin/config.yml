@@ -1,7 +1,8 @@
 site_url: https://maaya.kadobayashi.com
-# logo_url: https://maaya.kadobayashi.com/images/logo.png
+logo_url: https://maaya.kadobayashi.com/images/logo.png
 locale: ja
 search: false
+publish_mode: simple
 
 backend:
   name: github
@@ -13,14 +14,15 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "post"
+  - name: "posts"
     label: "Blog Posts・ブログ記事"
+    label_singular: "Blog Post・ブログ記事"
     folder: "content/posts"
     create: true
     path: "{{year}}/{{month}}/{{slug}}/index"
     slug: "{{slug}}"
-    media_folder: ""
-    public_folder: ""
+    media_folder: "{{dirname}}"
+    public_folder: "{{dirname}}"
     view_filters:
       - label: "Essen・食べ物"
         field: "categories"
@@ -37,6 +39,9 @@ collections:
       - label: "Sonstiges・その他"
         field: "categories"
         pattern: "Sonstiges・その他"
+      - label: "Draft・下書き"
+        field: "draft"
+        pattern: true
     view_groups:
       - label: Monat・月
         field: date
