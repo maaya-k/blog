@@ -21,8 +21,8 @@ collections:
     create: true
     path: "{{year}}/{{month}}/{{slug}}/index"
     slug: "{{slug}}"
-    media_folder: "{{dirname}}"
-    public_folder: "{{dirname}}"
+    media_folder: ""
+    public_folder: ""
     view_filters:
       - label: "Essen・食べ物"
         field: "categories"
@@ -60,4 +60,8 @@ collections:
           - "Kultur・文化"
           - "Sonstiges・その他"
       - { label: "Tags・タグ", name: "tags", widget: "list", default: [] }
-      - { label: "Inhalt・本文", name: "body", widget: "markdown" }
+      - label: "Inhalt・本文"
+        name: "body"
+        widget: "markdown"
+        buttons: ["bold", "italic", "link", "heading-one", "heading-two", "heading-three", "heading-four", "heading-five", "heading-six", "quote", "bulleted-list", "numbered-list"]
+        editor_components: ["image"]
