@@ -19,3 +19,5 @@ params:
 #   main:
 #     - name: Github
 #       url: https://github.com/maaya-k/
+
+enableRobotsTXT: true
