@@ -6,8 +6,13 @@
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </h1>
   <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="post-date locale-date">{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</time>
+  {{ with .Resources.ByType "image" }}
+    {{ with index . 0 }}
+      <!--img src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="max-width:200px;"-->
+    {{ end }}
+  {{ end }}
   <div class="post-summary">
-    {{ .Summary }}
+  {{ .Summary | replaceRE "<img[^>]*>" "" | plainify | truncate 120 | safeHTML }}
   </div>
   {{ if .Truncated }}
   <div class="read-more-link" style="margin-top:0.5em;">
