@@ -21,3 +21,4 @@ params:
 #       url: https://github.com/maaya-k/
 
 enableRobotsTXT: true
+canonifyURLs: true
